@@ -19,7 +19,6 @@
     "@ngx-translate/core": "^16.0.4",
     "@ngx-translate/http-loader": "^16.0.1",
     "ngx-mat-cron-select": "latest",
-    "prettier": "^3.6.2",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.15.0"
@@ -28,13 +27,7 @@
     "@angular-devkit/build-angular": "^19.2.15",
     "@angular/cli": "^19.2.15",
     "@angular/compiler-cli": "^19.2.0",
-    "@types/jasmine": "~5.1.0",
-    "jasmine-core": "~5.6.0",
-    "karma": "~6.4.0",
-    "karma-chrome-launcher": "~3.2.0",
-    "karma-coverage": "~2.2.0",
-    "karma-jasmine": "~5.1.0",
-    "karma-jasmine-html-reporter": "~2.1.0",
+    "prettier": "^3.6.2",
     "typescript": "~5.7.2"
   }
 }
