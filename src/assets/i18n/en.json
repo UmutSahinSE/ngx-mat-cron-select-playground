@@ -1,0 +1,14 @@
+{
+  "ngxMatCronSelect": {
+    "dayOfMonthSelectLabel": "Select days",
+    "dayOfWeekSelectLabel": "Select days of week",
+    "hourSelectLabel": "Select hours",
+    "minuteSelectLabel": "Select minutes",
+    "monthSelectLabel": "Select months",
+    "tabLabelDay": "Day",
+    "tabLabelHour": "Hour",
+    "tabLabelMonth": "Week",
+    "tabLabelWeek": "Month",
+    "tabLabelYear": "Year"
+  }
+}
