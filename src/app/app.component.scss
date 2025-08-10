@@ -1,4 +1,18 @@
-.box {
-  width: 550px;
-  height: 400px;
+.cron-select {
+  display: block;
+}
+
+.playground {
+  position: absolute;
+  top: 500px;
+
+  .toolbar {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+  }
+
+  .mt-3 {
+    margin-top: 1rem;
+  }
 }

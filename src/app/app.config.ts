@@ -6,8 +6,6 @@ import {
   provideZoneChangeDetection,
   signal,
 } from '@angular/core';
-import { provideRouter } from '@angular/router';
-import { routes } from './app.routes';
 import {
   HttpClient,
   provideHttpClient,
@@ -35,7 +33,6 @@ import { filter, of, take } from 'rxjs';
 export const appConfig: ApplicationConfig = {
   providers: [
     provideZoneChangeDetection({ eventCoalescing: true }),
-    provideRouter(routes),
     provideHttpClient(withInterceptorsFromDi()),
     importProvidersFrom(
       TranslateModule.forRoot({
@@ -53,7 +50,7 @@ export const appConfig: ApplicationConfig = {
     { provide: NGX_MAT_CRON_SELECT_IS_TWELVE_HOUR, useValue: signal(false) },
     { provide: NGX_MAT_CRON_SELECT_WEEK_FORMAT, useValue: 'long' },
     { provide: NGX_MAT_CRON_SELECT_MONTH_FORMAT, useValue: 'long' },
-    { provide: MAT_DATE_LOCALE, useValue: 'tr-TR' },
+    // { provide: MAT_DATE_LOCALE, useValue: 'tr-TR' },
     provideNMCSTranslations(
       of({
         en: {
@@ -62,12 +59,12 @@ export const appConfig: ApplicationConfig = {
           everyDayLabel: 'Every Day',
           everyHourLabel: 'Every Hour',
           everyMinuteLabel: 'Every Minute',
-          everyMonthLabel: 'Every Monthh',
+          everyMonthLabel: 'Every Month',
           hourSelectLabel: 'Select hours',
           minuteSelectLabel: 'Select minutes',
           monthSelectLabel: 'Select months',
-          tabLabelDay: 'Hour',
-          tabLabelHour: 'Day',
+          tabLabelDay: 'Day',
+          tabLabelHour: 'Hour',
           tabLabelMonth: 'Month',
           tabLabelWeek: 'Week',
           tabLabelYear: 'Year',
