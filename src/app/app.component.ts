@@ -50,10 +50,11 @@ export class AppComponent {
       nonNullable: true,
       validators: [Validators.required],
     }),
-    hour: new FormControl<number | null>(null, {
-      validators: [Validators.required],
-    }),
-    // hour: new FormControl<number[]>([], {nonNullable: true, validators: [Validators.required] }),
+    // Example single select
+    // hour: new FormControl<number | null>(null, {
+    //   validators: [Validators.required],
+    // }),
+    hour: new FormControl<number[]>([], {nonNullable: true, validators: [Validators.required] }),
     minute: new FormControl<number[]>([], {
       nonNullable: true,
       validators: [Validators.required],
